@@ -1,0 +1,107 @@
+body
+{
+    background-image: url(./bg-2.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/* navigation bar */
+.nav ul
+{
+    display:flex;
+    justify-content: center;
+    background-color:  #a18975cc;
+    list-style: none;
+}
+
+.nav li
+{
+    padding: 20px;
+}
+
+.nav li a
+{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.nav li a:hover
+{
+    opacity:0.7;
+}
+
+.nav img {
+    height:70px;
+    width:70px;
+    float: right;
+    border-radius: 50%;
+    margin-top: -90px;
+    margin-right: 10px;
+    border: 2px solid black
+   
+}
+
+.nav h1{
+    float:right;
+    margin-top: -70px;
+    margin-right: 8%;
+}
+
+h2
+{
+    background-color: #a18975cc;
+    font-size: 35px;
+    padding-top: 5px;
+}
+
+/* Main */
+#my_div
+{ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.container{
+    background-color: #a18975cc;
+    flex: 1 0 150px;
+    margin: 5px;
+    border: 2px solid black;
+    width: 150px;
+    height:250px;
+    transition:all 0.5s ease-out ;
+  } 
+
+.container:hover
+{
+    background-color: #a18975;
+    transform: scale(1.1);
+}
+
+img
+{
+    height:120px;
+    width: 100%;
+}
+
+.container a
+{
+    color: black;
+    font-size: 14px;
+    float:right;
+    margin-top: 110px;
+    text-decoration: none;
+} 
+
+/* Footer */
+footer a{
+    text-decoration: none;
+    float:right;
+    font-size: 2rem;
+}
+
+

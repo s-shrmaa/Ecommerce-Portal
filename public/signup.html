@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+  <form id="sidebar" action="/signup" enctype="multipart/form-data" method="post">
+    <label for="name"></label>
+      <div>
+        <input type="text" id="name" name="name" required placeholder="Enter name">
+      </div>
+
+    <label for="username"></label>
+      <div>
+        <input type="text" id="username" name="username" required placeholder="Enter username">
+      </div>
+   
+    <label for="password"></label>
+      <div>
+        <input type="password" id="password" name="password" required placeholder="Enter password" >
+      </div>
+    
+    <label for="pic"></label>
+      <div>
+        Upload Picture<input type="file" id="pic" name="pic" required>
+      </div>
+    
+    <br>
+    <button id="create">Create Account</button>
+    <button id="login"><a href="login.html">Sign In</a></button>
+  </form>
+</body>
+</html>

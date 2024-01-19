@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="signup.css">
+  </head>
+
+  <body>
+    <form id="sidebar" action="/login" method="post">
+      <label for="name">Name</label>
+      <div>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <label for="username">Username</label>
+      <div>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <label for="password">Password</label>
+      <div>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <br>
+      <div>
+        <button id="login">LOGIN</button>
+        <button><a href="signup.html">SIGN UP</a></button>
+      </div>
+    </form>
+  </body>
+</html>
