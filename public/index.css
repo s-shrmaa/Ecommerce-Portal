@@ -64,7 +64,7 @@ li a:hover {
 
 .container{
     background-color: #a18975cc;
-    flex: 1 0 50px;
+    flex: 1 0 200px;
     margin-right: 5px;
     border: 2px solid black;
   } 
@@ -88,12 +88,12 @@ h3 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(1, 1fr); 
 }
 
 .grid-item {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 240px 240px;
     margin: 4px;
     border: 2px dashed black;
