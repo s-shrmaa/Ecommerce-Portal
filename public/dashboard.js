@@ -1,13 +1,14 @@
-let div1 = document.createElement("div");
-div1.setAttribute("id", "my_div");
+let div1 = document.getElementById("my_div");
 
 fetch("https://fakestoreapi.com/products")
 .then(function(response){
     return response.json();
 })
 .then(function(jsonData){
+    console.log(jsonData)
     for(items in jsonData){
         var imgSource = jsonData[items].image;
+        let productPrice = jsonData[items].price;
 
         let div2 = document.createElement("div");
         div2.setAttribute("class", "container");
@@ -15,13 +16,17 @@ fetch("https://fakestoreapi.com/products")
         let img = document.createElement("img");
         img.setAttribute("src", imgSource);
 
+        let price = document.createElement("h3");
+        price.innerHTML = "$" + productPrice;
+
         let anc = document.createElement("a");
         anc.setAttribute("href", "product.html");
         anc.innerHTML = "View More ➡️";
 
-        div2.append(img);
-        div2.append(anc);
-        div1.append(div2);
-        document.body.appendChild(div1);
+        div2.appendChild(img);
+        
+        div2.appendChild(price);
+        div2.appendChild(anc);
+        div1.appendChild(div2);
     }
 })

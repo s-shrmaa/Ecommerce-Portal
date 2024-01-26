@@ -68,11 +68,11 @@ h2
 
 .container{
     background-color: #a18975cc;
-    flex: 1 0 150px;
+    flex: 1 0 200px;
     margin: 5px;
     border: 2px solid black;
     width: 150px;
-    height:250px;
+    height:300px;
     transition:all 0.5s ease-out ;
   } 
 
@@ -84,8 +84,12 @@ h2
 
 img
 {
-    height:120px;
+    height:200px;
     width: 100%;
+}
+
+h3 {
+    text-align: center;
 }
 
 .container a
@@ -93,7 +97,7 @@ img
     color: black;
     font-size: 14px;
     float:right;
-    margin-top: 110px;
+    margin-top: 15px;
     text-decoration: none;
 } 
 

@@ -68,7 +68,7 @@ app.post("/login", (req,res)=>{
        Users.findOne({$and:[{'name':req.body.name}, {"username": req.body.username}, {"password": req.body.password}]}).then((response)=>{
         if(response){
             req.session.name = req.body.name;
-            res.redirect("/products");
+            res.redirect("/dashboard");
         }
         else{
             res.redirect("/login");
@@ -76,9 +76,9 @@ app.post("/login", (req,res)=>{
     });
 })
 
-app.get("/products", (req,res)=>{
+app.get("/dashboard", (req,res)=>{
     if(req.session.name){
-        res.render("products", {"nameDisplay": req.session.name});
+        res.render("dashboard", {"nameDisplay": req.session.name});
     }
     else{
        res.redirect("/login");
